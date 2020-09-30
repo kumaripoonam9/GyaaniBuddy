@@ -1,0 +1,373 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/************************ HEADER ***********************/
+#header{
+	/*background-color: black;*/
+	background-color: black;
+	/*opacity: 0.9;*/
+}
+#header nav {
+	/*position: sticky;*/
+	background-color: black;
+	opacity: 0.9;
+	/*z-index: 9;*/
+}
+
+#header img {
+	margin-left: 50px;
+}
+.login a {
+	border-radius: 10px;
+}
+
+
+
+#id01 {
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#id01 button[type=submit],
+#id01 button[type=button] {
+	margin: 2px;
+}
+
+/* Set a style for all buttons */
+#id01 button {
+  color: white;
+  font-weight: bold;
+  padding: 14px 50px;
+  /*margin: 100px 100px;*/
+  /*border-color: black;*/
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100% ;
+  /*margin: auto;*/
+  /*align-self: center;*/
+  /*float: left;*/
+}
+
+#id01 button:hover {
+  opacity: 0.85;
+}
+
+input[name=remenber] {
+	padding-top: 100px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 100%;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  /*border-radius: 50%;*/
+}
+
+#id01 .container {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  /*padding-top: 16px;*/
+}
+
+div.pt-16px {
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  padding-top: 30px; /* distance of login box from top of page*/
+}
+
+/* Modal Content/Box */
+#id01 .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+#id01 .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#id01 .close:hover,
+#id01 .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+#id01 .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  #id01 .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*********************** HEADER END *******************/
+
+
+
+
+/************************ MAIN BODY ***********************/
+
+.top-card {
+	background-image: url('IMAGES/index/top-card.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: 100%;*/
+	/*width: 100%;*/
+	height: 100%;
+	padding: 300px 100px 300px 100px;
+	color: black;
+}
+.top-card h1 {
+	font-weight: bold;
+}
+.top-card h2 {
+	font-weight: bold;
+}
+#weak-card {
+	align-content: center;
+	padding-top: 150px;
+}
+#weak-card img {
+	width: 80%;
+	/*padding-top: 100px;*/
+	padding-bottom: 100px;
+}
+#weak-card h2 {
+	padding-top: 100px;
+	font-weight: bold;
+}
+#weak-card h5 {
+	color: #ABB2B9;
+}
+
+.brief {
+	color: #1f1d1e;
+}
+
+#know-card {
+	align-content: center;
+	/*padding-top: 500px;*/
+}
+#know-card img {
+	padding-top: 50px;
+}
+#know-card h5 {
+	color: #ABB2B9;
+}
+#know-card h2 {
+	padding-top: 100px;
+	font-weight: bold;
+
+}
+#know-card img {
+	/*width: 80%;*/
+	/*padding-top: 100px;*/
+	padding-bottom: 130px;
+}
+
+#teacher img {
+	padding-bottom: 100px;
+}
+#teacher h5 {
+	padding-top: 100px;
+}
+
+#flashcards {
+	/*text-align: center;*/
+	/*background-color: pink;*/
+	/*size: 0px;*/
+	/*font-weight: bold;*/
+	/*margin-top: 100px;*/
+	padding-bottom: 100px;
+}
+#flashcards h2 {
+	/*padding-top: 100px;*/
+}
+
+.card-name {
+	box-shadow: 5px 10px 8px 10px #888888;
+	background-image: url('IMAGES/index/flashcard.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#flashcards div a:hover{
+	/*box-shadow: 20px 20px 20px 20px #888888;*/
+	/*border-radius: 0;*/
+}
+
+#flashcards div{
+	padding: 30px 100px;
+	border-radius: 20px;
+	font-weight: bold;
+	float: left;
+}
+#flashcards h6 {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+.card-name:hover {
+	box-shadow: 10px 10px #888888;
+}
+
+#comment-img {
+	background-image: url('IMAGES/index/comment.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-size: 100%;*/
+	width: 100%;
+	height: 500px;
+}
+
+#comment-img h4 {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+#feedback {
+	background-color: #ffdcd6;
+}
+
+#feedback h5 {
+	text-align: center;
+	padding: 50px;
+		margin-bottom: 0;
+}
+
+#end-page {
+	background-image: url('IMAGES/index/puzzle.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	/*height: 100%;*/
+	height: 800px;
+	/*align-content: center;*/
+	/*padding: 0px 0px;*/
+}
+#end-page h5 {
+	padding-top: 350px;
+	font-size: 45px;
+}
+#end-page button {
+	background-color: #2a2a68;
+	border-color: #2a2a68;
+}
+#end-page a, 
+#end-page a:hover, 
+#end-page a:focus{
+	text-decoration: none;
+	color: white;
+}
+
+/************************ BODY END ***********************/
+
+
+
+/************************ FOOTER ***********************/
+#footer-content {
+	background-color: black;
+	padding-top: 20px;
+	/*margin-right: 0;*/
+	padding-bottom: 50px;
+	align-content: center;
+}
+
+footer {
+	background-color: black;
+	padding-top: 10px;
+}
+
+.footer-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-child > button {
+  padding: 11px 0px;
+  padding-right: 130px;
+  border: none;
+  border-bottom: 1px solid rgb(41, 41, 41);
+  background-color: transparent;
+  color: silver;
+  font-size: 18px;
+}
+
+.footer-child h3 {
+  font-size: 15px;
+  color: silver;
+  margin-top: 20px;
+  font-weight: 500;
+}
+/************************ FOOTER END ***********************/
