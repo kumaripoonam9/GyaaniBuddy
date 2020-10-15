@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(IMAGES/quiz-page/books-lib.jpg);
+}
+
+
+/*********************************** HEADER ***********************************/
+
+nav {
+	background-color: black;
+}
+
+/********************************* MAIN BODY ***********************************/
+
+#name_topic_display {
+	padding-top: 80px;
+	width: 50%;
+	margin: auto auto;
+	/*opacity: 100%;*/
+}
+
+.card {
+	opacity: 85%;
+}
+
+.pad20mar10 {
+	padding: 20px; 
+	margin: 10px;
+}
+
+.question-panel {
+	padding-right: 0;
+}
+
+#quiz-body {
+	color: black;
+}
+
+#timer-box {
+	padding-left: 0;
+}
+
+#quiz-body {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+li.questions{
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+button.btn:hover, button.btn: focus{
+	text-decoration: none;
+}
+
+div.options {
+	list-style: none;
+	/*padding-left: 55px;*/
+	font-size: 17px;
+	padding: 15px 0px;
+}
+
+.submit_button {
+	margin: auto auto;
+	padding-bottom: 50px;
+	width: 40%;
+}
+.submmit_button button {
+	background-color: #0a0a0a;
+}
+
+#timer-box {
+	right: 0;
+	position: absolute;
+}
+
+footer {
+	/*padding-top: 30px;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+.size-change-h1 {
+
+}
+
+
+
+/********** Medium devices only **********/
+@media (max-width: 992px) and (min-width: 769px) {
+
+	#name_topic_display {
+		padding-top: 13vh;
+	}
+
+	.hidden-md {
+		display: none;
+	}
+
+	/*.question-panel {
+
+		display: none;
+
+	}*/
+
+	form {
+		height: 100%;
+	}
+
+	#quiz-body .pad20mar10 {
+		/*padding: 20px; */
+		margin-left: 35px;
+	}
+
+	/*#quiz-body {
+		padding-right: 0;
+		padding-left: 6px;
+	}*/
+
+	#timer-box {
+		padding-left: 0;
+		position: fixed;
+		/*top: ;*/
+	}
+
+	#timer-box h4 {
+		font-size: 2.2vw;
+	}
+
+	#quiz-body {
+		padding-right: 0;
+		padding-left: 0;
+		/*font-size: 20px;*/
+	}
+
+	li.questions {
+		font-size: 2.1vw;
+	}
+
+	div.options {
+		font-size: 1.9vw;
+	}
+
+	.size-change-h1 {
+		font-size: 4vw;
+	}
+
+	.submit_button {
+	/*margin: auto auto;*/
+	padding-bottom: 10px;
+	/*width: 40%;*/
+	}
+
+	footer {
+		/*padding-top: 30px;*/
+		/*background-color: black;*/
+		/*color: white;*/
+		/*text-align: center;*/
+		padding: 10px;
+		font-size: 15px;
+	}
+}
+
+
+/********* Small devices only *********/
+@media (max-width: 768px) and (min-width: 577px) {
+
+	.hidden-md {
+		display: none;
+	}
+
+	#name_topic_display {
+		padding-top: 10vh;
+	}
+
+	#quiz-body .pad20mar10 {
+		padding: 5px; 
+		margin: 0 20px 10px 20px;
+		/*margin-left: 20px;*/
+		/*margin-right: 20px;*/
+	}
+
+	#timer-box h4 {
+		font-size: 15px;
+	}
+
+	.size-change-h1 {
+		font-size: 4vw;
+	}
+
+	#timer-box .pad20mar10 {
+		padding: 5px;
+		margin: 0;
+		/*bottom: 0;*/
+	}
+
+	#timer-box h4 {
+		margin: 0;
+	}
+
+
+
+
+}
+
+
+/********** Extra small devices only *********/
+@media (max-width: 576px) {
+	.hidden-sm {
+		display: none;
+	}
+}
