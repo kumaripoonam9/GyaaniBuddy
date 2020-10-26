@@ -1,0 +1,54 @@
+@media (max-width: 500px) and (min-width: 280px) {
+
+  h5 {
+    font-size: 15px;
+  }
+  h2{
+  	font-size: 25px;
+  }
+  .button1{
+  	display: flex;
+  	justify-content: center;
+  }
+
+}
+
+h5,h2{
+	font-style: normal;
+}
+.card1{
+	width: 75%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+	/*padding-bottom: 30px;*/
+	padding: 30px;
+}
+.card1-title{
+	text-align: center;
+	background-color: silver;
+	padding: 10px;
+	font-style: normal;
+}
+.instruction-list{
+	padding: 10px;
+}
+.container1{
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.button1{
+
+margin-right: 50px;
+border-radius: 50px;
+background-color: gray;
+color: white;
+}
+.button1:hover{
+	background-color: green;
+	color: white;
+}

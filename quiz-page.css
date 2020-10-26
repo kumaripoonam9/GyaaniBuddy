@@ -2,28 +2,37 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-image: url(IMAGES/quiz-page/books-lib.jpg);
+
+
+header img {
+	border-radius: 9px;
 }
 
-
-/*********************************** HEADER ***********************************/
-
-nav {
-	background-color: black;
-}
 
 /********************************* MAIN BODY ***********************************/
 
-#name_topic_display {
-	padding-top: 80px;
+/*#name_topic_display {
+	padding-top: 60px;
 	width: 50%;
 	margin: auto auto;
-	/*opacity: 100%;*/
+}
+
+#name_topic_display .fixed-top {
+	top: 50px;
+}*/
+
+div.main-body {
+	padding-top: 120px;
 }
 
 .card {
-	opacity: 85%;
+	/*opacity: 85%;*/
+	border: none;
+	background-color: transparent;
+}
+
+.quiz-body .card  {
+	/*border: 1px solid rgba(0, 0, 0, 0.125);*/
 }
 
 .pad20mar10 {
@@ -39,9 +48,6 @@ nav {
 	color: black;
 }
 
-#timer-box {
-	padding-left: 0;
-}
 
 #quiz-body {
 	padding-right: 0;
@@ -50,7 +56,7 @@ nav {
 
 
 li.questions{
-	padding-top: 30px;
+	padding-top: 25px;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -61,14 +67,13 @@ button.btn:hover, button.btn: focus{
 
 div.options {
 	list-style: none;
-	/*padding-left: 55px;*/
 	font-size: 17px;
 	padding: 15px 0px;
 }
 
 .submit_button {
 	margin: auto auto;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	width: 40%;
 }
 .submmit_button button {
@@ -92,24 +97,45 @@ footer {
 
 }
 
+#timer-box h4 {
+	font-size: 1.5vw;
+}
+
 
 
 /********** Medium devices only **********/
 @media (max-width: 992px) and (min-width: 769px) {
 
-	#name_topic_display {
-		padding-top: 13vh;
-	}
+	/*#name_topic_display {
+		padding-top: 90px;
+	}*/
 
 	.hidden-md {
 		display: none;
 	}
 
-	/*.question-panel {
+	.quiz-body .card  {
+	border: none;
+}
 
-		display: none;
+	.question-panel {
+		margin-top: 100px;
+	}
 
-	}*/
+	div#timer-box {
+		left: 0;
+		/*top: 350px;*/
+	}
+
+	#timer-box h4 {
+	font-size: 10px;
+}
+
+.question-panel h4 {
+	font-size: 2vw;
+}
+	
+
 
 	form {
 		height: 100%;
@@ -119,11 +145,6 @@ footer {
 		/*padding: 20px; */
 		margin-left: 35px;
 	}
-
-	/*#quiz-body {
-		padding-right: 0;
-		padding-left: 6px;
-	}*/
 
 	#timer-box {
 		padding-left: 0;
@@ -135,10 +156,8 @@ footer {
 		font-size: 2.2vw;
 	}
 
-	#quiz-body {
-		padding-right: 0;
-		padding-left: 0;
-		/*font-size: 20px;*/
+	div#quiz-body {
+		padding-left: 10px;
 	}
 
 	li.questions {
@@ -160,53 +179,78 @@ footer {
 	}
 
 	footer {
-		/*padding-top: 30px;*/
-		/*background-color: black;*/
-		/*color: white;*/
-		/*text-align: center;*/
 		padding: 10px;
 		font-size: 15px;
 	}
+
 }
 
 
 /********* Small devices only *********/
 @media (max-width: 768px) and (min-width: 577px) {
 
-	.hidden-md {
+	.hidden-md_ {
 		display: none;
 	}
 
-	#name_topic_display {
-		padding-top: 10vh;
+	h1 {
+		/*margin-top: 100px;*/
+		font-size: 30px;
+		font-weight: bold;
 	}
+
+	div#quiz-body {
+		padding-top:0;
+	}
+
+	.quiz-body .card  {
+	border: none;
+}
+
+	/*#name_topic_display {
+		padding-top: 70px;
+	}*/
 
 	#quiz-body .pad20mar10 {
 		padding: 5px; 
 		margin: 0 20px 10px 20px;
-		/*margin-left: 20px;*/
-		/*margin-right: 20px;*/
 	}
 
 	#timer-box h4 {
+		padding: 5px;
 		font-size: 15px;
+		background-color: #A8A7A7;
+		border-radius: 3px;
+		background-color: #E1F5C4;
+	}
+
+	#timer-box.position-fixed {
+		top: 16px;
+		z-index: 1030;
 	}
 
 	.size-change-h1 {
 		font-size: 4vw;
 	}
 
-	#timer-box .pad20mar10 {
-		padding: 5px;
-		margin: 0;
-		/*bottom: 0;*/
-	}
-
-	#timer-box h4 {
-		margin: 0;
+	div#timer-box{
+		font-size: 10px;
+		bottom: 45px;
 	}
 
 
+
+	#quiz-body .card {
+		border: none;
+	}
+
+	.submit_button button {
+		font-size: 20px;
+	}
+
+	#quiz-body li , #quiz-body div{
+		font-size: 15px;
+	}
 
 
 }
@@ -217,4 +261,49 @@ footer {
 	.hidden-sm {
 		display: none;
 	}
+
+	#quiz-body .card {
+		border: none;
+	}
+
+	#timer-box h4 {
+		margin-top: 5px;
+		padding: 5px;
+		font-size: 12px;
+		background-color: #A8A7A7;
+		border-radius: 3px;
+		background-color: #E1F5C4;
+	}
+
+	#timer-box.position-fixed {
+		top: 16px;
+		z-index: 1030;
+	}
+
+	li.questions {
+		padding-top: 10px;
+	}
+
+	h1 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.quiz-body .card  {
+	border: none;
+}
+
+	#quiz-body li , #quiz-body div{
+		font-size: 15px;
+	}
+
+	.submit-button {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.submit_button button {
+		font-size: 15px;
+	}
+
 }

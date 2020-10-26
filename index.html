@@ -8,7 +8,7 @@
 	<!------------------- BootStrap CSS -------------------->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!------------------- style sheet --------------------->
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index-css.css">
 	<!---------------------- Fonts -------------------------->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -22,36 +22,44 @@
 </head>
 
 <body>
-	<!---------------------------------- Navbar --------------------------------->
-	<div id='header' class="">
-		<nav class="navbar navbar-expand-lg navbar navbar-dark fixed-top" style="width: 100%;
-   color: white;"> 
-   			<div class="container-fluid">
-   				<a href="#" alt="Home Page" target="_blank"><img src="IMAGES/logo.png" width="50px;" height="50px;"></a>
-	   			<a class="navbar-brand" href="#" alt="Home Page" target="_blank">&nbsp;&nbsp;GyaaniBuddy</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active invisible"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-						<li class="nav-item invisible">
-							<a class="nav-link" href="#"> </a>
-						</li>
-						<li class="login">
-							<li class="nav-item active"> 
-								<a class="nav-link button btn-info" style="position: absolute; right: 200px; border-radius: 8px;" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
-									Login <span class="sr-only">(current)</span>
-								</a> 
-							</li>
-							<li class="nav-item active "> <a class="nav-link button btn-info" style="position: absolute;right: 100px; border-radius: 8px;" href="#" > Sign up <span class="sr-only">(current)</span></a> </li>
-						</li>
-					</ul>
-				</div>
-   			</div>
-		</nav>
-	</div>
+
+	<!---------------------------------------- Navbar ---------------------------------------->
+	<header>
+      	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+	        <img src="IMAGES/gb-logo.png" width="45" height="45" class="d-inline-block align-top bg-light"  >
+	        <a class="navbar-brand pl-md-3" href="index.html">GyaaniBuddy</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	          	<span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+		        <ul class="navbar-nav mr-auto">
+		            <li class="nav-item active">
+		              	<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		            </li>
+		            <li class="nav-item">
+		              	<a class="nav-link" href="#">Blogs</a>
+		            </li>
+		            <li class="nav-item">
+		              	<a class="nav-link" href="#">Other things</a>
+		            </li>
+		        </ul>
+		        <form class="text-center mt-md-0">
+		            <ul class="navbar-nav mr-auto">
+			            <li class="nav-item">
+			              	<a class="nav-link" href="#" class="">Login</a>
+			            </li>
+			            <li class="nav-item">
+			              	<a class="nav-link" href="#" class="">Sign Up</a>
+			            </li>
+		          	</ul>
+		        </form>
+	        </div>
+     	</nav>
+    </header>
+    <!---------------------------------------- Navbar ends ---------------------------------------->
 
 	<!----------------------- Login ------------------------>
-	<div id="id01" class="modal">
+	<!-- <div id="id01" class="modal">
 	  	<form class="modal-content animate" action="/action_page.php" method="post">
 		    <div class="imgcontainer">
 			    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -67,7 +75,6 @@
 			        
 			    <div class="col-lg-12 container">
 			    	<button type="submit" class=" button btn-info" style="background-color: #7fbbca;" >Login</button>
-				    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="col-lg-6 cancelbtn" style="">Cancel</button> -->
 			    </div >
 
 			    <div class="container row text-center">
@@ -78,28 +85,52 @@
 				    
 		    </div>
 	  </form>
-	</div>
+	</div> -->
+
+
 
 	<!--------------------------- Main Body --------------------------------->
 
-	<div > 
+	<main > 
 
 		<div class="top-card">
 			<h1>Be the greatest Gyaani ever!</h1>
 			<h3>Platform for <b> dedicated learners.</b></h3>
 		</div>
 
-		<div class="container " id="weak-card">
-			<div class="col-lg-6 float-left">
-				<img src="IMAGES/index/flowing-color.png" >
+		<!-- <div>
+			<div class="row">
+				<div class="col-4 color1"></div>
+				<div class="col-4 color2"></div>
+				<div class="col-4 color3"></div>
 			</div>
-			<div class="col-lg-6 float-left">
-				<h2>Defeat your weaknesses!</h2>
-				<h5>GyaaniQuiz helps you optimize your studying, by recommending you harder quizes and concepts in perfect interval of time according to your grasping speed.</h5>
+		</div> -->
+
+		<div class="weak  info-card">
+			<div class="row">
+				<div class="col-7">
+					<img src="IMAGES/index/weak.jpg" width="100%">
+				</div>
+				<div class="col-5 container card-content">
+					<h2 class="font-weight-bold">Defeat your weaknesses!</h2>
+					<h6 class="brief">GyaaniQuiz helps you optimize your studying, by recommending you harder quizes and concepts in perfect interval of time according to your grasping speed.</h6>
+				</div>
 			</div>
 		</div>
 
-		<div class="container" id="know-card">
+		<div class="knowledge info-card">
+			<div class="row">				
+				<div class="col-5 container card-content">
+					<h2 class="font-weight-bold">Judge your knowledge</h2>
+					<h6 class="brief">Take a quiz on the topic of your choice... <br>We are here to help.</h6>
+				</div>
+				<div class="col-7">
+					<img src="IMAGES/index/knowledge.jpg" width="100%">
+				</div>
+			</div>
+		</div>
+			
+		<!-- <div class="container" id="know-card">
 			<div class="row col-lg-12">
 				<div class="col-lg-6 float-left">
 					<h2><br>Judge your knowledge</h2>
@@ -109,138 +140,140 @@
 					<img src="IMAGES/index/girl.png" width="120%" >
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="container " id="teacher">
-			<div class="row col-lg-12">
-				<div class="col-lg-6 float-left">
-					<img src="IMAGES/index/Teacher.jpg" width="100%">
+		<div class="teacher info-card">
+			<div class="row">				
+				<div class="col-7">
+					<img src="IMAGES/index/teachers.jpg" width="100%">
 				</div>
-				<div class="col-lg-6 float-left ">
+				<div class="col-5 container card-content">
 					<h5 class="font-weight-bold">TEACHERS</h5>
 					<h2 class="font-weight-bold">Empower your students!</h2>
 					<h6 class="brief">GyaaniQuiz helps you optimize your studying, by recommending you harder quizes and concepts in perfect interval of time according to your grasping speed.</h6>
-				</div>
+				</div>				
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row col-lg-12">
-				<div id="flashcards" style="" class="">
-					<h2 class="font-weight-bold text-center">
-						Most visited and attempted quiz by the users!
-					</h2>
-					<div class="col-lg-6 " style="">
-						<a href="#">
-							<div class="bg-white text-center card-name">
-								<h6>Quiz Name</h6>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-6" style="">
-						<a href="#">
-						<!-- <img src="flashcard.jpg" width="100%">
-						<span class="text-body" style="float: left;">QUIZ NAME</span> -->
-						<div class="bg-white text-center card-name">
-							<h6>Quiz Name</h6>
+		<div class=" info-card">
+			<div class="row">
+				<div class="col-5 container card-content">
+					<h2 class="font-weight-bold">Loream ipsum dolor sit amet</h2>
+					<h6 class="brief">loream ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h6>
+				</div>
+				<div class="col-7">
+					<img src="IMAGES/index/person-working.jpg" width="100%">
+				</div>
+			</div>
+		</div>		
+
+		<div class=" justify-content-center">
+			<div class="" id="flashcards">
+				<div class="p-3 pb-2 pt-5 w-100 text-center h3 font-weight-bold">Most visited and attempted quiz by the users!</div>
+				<div class="conatiner">
+					<div class="row pt-2 pr-5 pl-5 pb-5">
+						<div class="col-4 ">
+							<button class="btn btn-outline-danger">Quiz name</button>					
 						</div>
-						</a>
-					</div>
-					<div class="col-lg-6" style="">
-						<a href="#">
-						<!-- <img src="flashcard.jpg" width="100%">
-						<span class="text-body" style="float: left;">QUIZ NAME</span> -->
-						<div class="bg-white text-center card-name">
-							<h6>Quiz Name</h6>
+						<div class="col-4">
+						<button class="btn btn-outline-danger">Quiz name</button>					
+						</div>				
+						<div class="col-4">
+							<button class="btn btn-outline-danger">Quiz name</button>					
 						</div>
-						</a>
-					</div>
-					<div class="col-lg-6" style="">
-						<a href="#">
-						<!-- <img src="flashcard.jpg" width="100%">
-						<span class="text-body" style="float: left;">QUIZ NAME</span> -->
-						<div class="bg-white text-center card-name"><h6>Quiz Name</h6></div>
-						</a>
+						<div class="col-4">
+							<button class="btn btn-outline-danger">Quiz name</button>					
+						</div>
+						<div class="col-4">
+							<button class="btn btn-outline-danger">Quiz name</button>					
+						</div>
+						<div class="col-4 ">
+							<button class="btn btn-outline-danger">Quiz name</button>					
+						</div>
 					</div>
 				</div>
+										
 			</div>
 		</div>
 
+		<!-- feedback / comment of user -->
 		<div class="" id="feedback">
 			<div class="">
-				<div class="row col-lg-12 " >
+				<div class="row " >
 					<h5 class=" font-weight-bold container">What our users have to say about us...</h5>
 				</div>
 				<div class="text-center pl-4 pr-4 " id="comment-img">
-					<h4 class="font-weight-bold container">"When it came to studying I was a mess. Now I am at this new school and they introduced me to GyaaniBuddy. I am no longer stressed when it comes to studying for assignments. THANK YOU GYAANIBUDDY!!!"</h4>
-					<h6><i> - Name XYZ, Student</i></h6>
+					<div class="user-comment p-3">
+						<h4 class="font-weight-bold container" style="opacity: 1;">"When it came to studying I was a mess. Now I am at this new school and they introduced me to GyaaniBuddy. I am no longer stressed when it comes to studying for assignments. THANK YOU GYAANIBUDDY!!!"</h4>
+						<h6><i> - Name XYZ, Student</i></h6>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container">
+
+		<!-- get started -->
+		<div class="container-fluid">
 			<div class="" id="end-page">
 				<h5 class="text-center font-weight-bold">Want to start your <br> journey with us?</h5>
-				<button class="btn btn-info btn-lg font-weight-bold" style="margin-left: 45%;"><a href="" style="text-decoration: none;">Get Started</a></button>
+				<div class="text-center pt-2">
+					<button class=" btn btn-info btn-lg font-weight-bold" style=" "><a href="">Get Started</a></button>
+				</div>
+					
 			</div>
 		</div>
 
-	</div>
+	</main>
 
-	<!------------------------------- Footer ------------------------------>
+	<!---------------------------------------- footer ---------------------------------------->
 
-	<div id="footer-content" class="row" >
-		<div class="container">
-			<div class="row">
-				<div class="footer-1">
-		          <div class="footer-child">
-		            <button class="disabled" disabled="true">Company</button>
-		            <h3>About Us</h3>
-		            <h3>Careers</h3>
-		            <h3>Connect Us</h3>
-		          </div>
-		          <div class="footer-child">
-		            <button class="disabled" disabled="true">Connect</button>
-		            <h3>Instagram</h3>
-		            <h3>Facebook</h3>
-		            <h3>Twitter</h3>
-		          </div>
-		          <div class="footer-child">
-		            <button class="disabled" disabled="true">Security</button>
-		            <h3>Privacy Policy</h3>
-		            <h3>Terms of Use</h3>
-		            <h3></h3>
-		          </div>
-		          <div class="footer-child">
-		            <button class="disabled" disabled="true">Resources</button>
-		            <h3>Blog</h3>
-		            <h3>Join Us</h3>
-		            <h3></h3>
-		          </div>
-		        </div>
-			</div>
-		</div>
-	</div>
-	<footer class="container-fluid pt-2 fixed-bottom">
-		<div class="container text-center text-white">
-			<p class="">Copyright &copy; Gyaani Buddy | All Rights Reserved.</p>
-		</div>
-		<!--
-		<div class="col-lg-4 col-md-4 float-right ">
-			<a href="index.html" alt="Home">
-				<i class="material-icons" >&nbsp;&nbsp;&nbsp;&nbsp;home</i>
-			</a>
-			<a href="contact.html" alt="Contact Us">
-				<i class="material-icons">question_answer</i>
-			</a>
-		</div>
-		-->
-	</footer>
+    <footer class="p-3 text-white pt-4 pb-5 ">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-3 col-6">
+    				<h6 class="border-bottom pb-1 pt-3">Company</h6>
+    				<ul class="list-unstyled">
+    					<li>About Us</li>
+    					<li>Careers</li>
+    					<li>Contact Us</li>
+    				</ul>
+    			</div>
+    			<div class="col-sm-3 col-6">
+    				<h6 class="border-bottom pb-1 pt-3">Connect</h6>
+    				<ul class="list-unstyled">
+    					<li>Instagram</li>
+    					<li>Facebook</li>
+    					<li>Twitter</li>
+    				</ul>
+    			</div>
+    			<div class="col-sm-3 col-6">
+    				<h6 class="border-bottom pb-1 pt-3">Security</h6>
+    				<ul class="list-unstyled">
+    					<li>Privacy policy</li>
+    					<li>Terms of use</li>
+    				</ul>
+    			</div>
+    			<div class="col-sm-3 col-6">
+    				<h6 class="border-bottom pb-1 pt-3">Resources</h6>
+    				<ul class="list-unstyled">
+    					<li>Blog</li>
+    					<li>Join Us</li>
+    					<li>Tech news</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>    	
+    </footer>
+
+    <footer class="fixed-bottom text-center text-white p-1">
+    	Copyright &copy; Gyaani Buddy | All rights reserved
+    </footer>
+    <!---------------------------------------- footer ends ---------------------------------------->
 
 
 
 	<!----------------------- Login ------------------------>
-	<script>
+	<!-- <script>
 	// Get the modal
 	var modal = document.getElementById('id01');
 	// When the user clicks anywhere outside of the login panel modal, close it
@@ -250,7 +283,7 @@
 	    }
 	}
 	</script>
-
+ -->
 
 
 

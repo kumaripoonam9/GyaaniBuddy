@@ -1,0 +1,95 @@
+.circleBar {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+}
+.circleBar .round1 {
+  min-height: 255px;
+  margin-top: 30px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 0px;
+}
+.circleBar .round1 strong {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  transform: translate(-50%);
+  font-size: 40px;
+  color: black;
+  font-weight: 100;
+}
+
+
+
+
+
+
+.card-title{
+  background-color: silver;
+  padding: 10px;
+}
+.con1{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.Status1{
+  color: green;
+}
+.r1{
+  /*padding: 10px;*/
+}
+.card1{
+  width: 75%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:auto;
+  background-color: white;
+
+  
+}
+
+@media (max-width: 768px) and (min-width: 280px) {
+  .card1{
+
+    background-color:white;
+    box-shadow:none;
+    width: 100%;
+    border: none;
+  }
+
+h5{
+  font-size: 17px;
+ 
+}
+
+.c1{
+  padding: 10px;
+}
+
+.circleBar .round1 strong{
+  font-size: 30px;
+}
+}
+/*h5{
+  /*font-family: cursive;*/
+  /*font-style: normal;
+}*/
+
+.textContents{
+  margin: auto;
+  border-radius: 100px;
+  
+}
+.textContents:hover{
+  background-color: red;
+}
+
+.c1{
+  padding: 20px;
+  margin: auto;
+
+}
