@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!----------------- Icon library (Google Icons) ------------------>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -202,11 +205,29 @@
 				<div class="row " >
 					<h5 class=" font-weight-bold container">What our users have to say about us...</h5>
 				</div>
-				<div class="text-center pl-4 pr-4 " id="comment-img">
-					<div class="user-comment p-3">
-						<h4 class="font-weight-bold container" style="opacity: 1;">"When it came to studying I was a mess. Now I am at this new school and they introduced me to GyaaniBuddy. I am no longer stressed when it comes to studying for assignments. THANK YOU GYAANIBUDDY!!!"</h4>
-						<h6><i> - Name XYZ, Student</i></h6>
+
+				<div class="text-center pl-4 pr-4 owl-carousel owl-theme" id="comment-img">
+					<div class="user-comment  p-3">
+						<div>
+							<h4 class="font-weight-bold container" style="opacity: 1;">"When it came to studying I was a mess. Now I am at this new school and they introduced me to GyaaniBuddy. I am no longer stressed when it comes to studying for assignments. THANK YOU GYAANIBUDDY!!!"</h4>
+							<h6><i> - Name XYZ, Student</i></h6>
+						</div>
 					</div>
+
+					<div class="user-comment p-3">
+						<div>
+							<h4 class="font-weight-bold container" style="opacity: 1;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum nulla eu tellus accumsan, eu lobortis diam posuere. Cras in egestas quam. Vivamus ullamcorper varius sollicitudin. Mauris vel neque vitae leo tempor fringilla. Aenean porttitor et libero in dignissim. Duis mattis fringilla orci, nec pretium diam ornare ultricies. Aenean vel quam purus. Donec pulvinar sit amet arcu in sagittis. Donec dignissim auctor mauris, eget sodales tellus."</h4>
+							<h6><i> - Name XYZ, Student</i></h6>
+						</div>
+					</div>
+
+					<div class="user-comment p-3">
+						<div>
+							<h4 class="font-weight-bold container" style="opacity: 1;">"Donec lacinia sed diam et tempus. Ut congue convallis porta. Donec a risus accumsan tortor mollis aliquam. Nullam non nisi neque. Suspendisse in turpis ut lectus auctor ornare eu faucibus lorem. Morbi tincidunt sodales neque. Maecenas ac sapien ipsum. "</h4>
+							<h6><i> - Name XYZ, Student</i></h6>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -292,5 +313,35 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayHoverPause: true,
+            items: 4,
+            nav: true,
+            dots: true,
+            loop: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>

@@ -308,3 +308,33 @@ header img {
 		padding: 200px 100px 200px 100px;
 	}
 }
+
+/*****************************Comment Slider************************************************/
+.owl-prev {
+            left: 10px;
+        }
+
+.owl-next {
+            right: 10px;
+        }
+
+.owl-prev,.owl-next {
+            position: absolute;
+            top: 10%;
+        }
+
+.owl-prev span,.owl-next span {
+            font-size: 60px;
+            color: #777777;
+
+        }
+.owl-prev span:hover{
+	background-color:pink ;
+}
+.owl-next span:hover{
+	background-color:pink ;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+            background-color:transparent;
+        }
